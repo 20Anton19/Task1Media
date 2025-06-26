@@ -15,5 +15,7 @@ public class Main {
         System.out.println("Перевод на другой счет: " + (transferAccount ? "Успешно" : "Неудача"));
         System.out.println("Счет Антона Лебедева: " + account1.GetBalance());
         System.out.println("Счет Михаила Осипова: " + account2.GetBalance());
+
+        System.out.println("Счета одинаковые? " + account1.equals(account2));
     }
 }
