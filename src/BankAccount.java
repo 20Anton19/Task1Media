@@ -15,6 +15,10 @@ import java.time.LocalDateTime;
         isBlocked = false;
     }
 
+    public int GetBalance() {
+        return balance;
+    }
+
     public boolean Deposit(int amount){
         balance += amount;
         return true;
@@ -31,7 +35,7 @@ import java.time.LocalDateTime;
          }
      }
 
-     public boolean transfer(BankAccount otherAccount, int amount) {
+     public boolean Transfer(BankAccount otherAccount, int amount) {
          if (balance >= amount) {
              balance -= amount;
              otherAccount.balance += amount;
